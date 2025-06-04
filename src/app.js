@@ -7,6 +7,11 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
 
+  drawCard();
+
+};
+
+function drawCard() {
   let palos = ["♠", "♥", "♦", "♣"];
   let numeros = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
   let palo = palos[Math.floor(Math.random() * palos.length)];
@@ -25,4 +30,6 @@ window.onload = function() {
   cardFooter.innerHTML = palo;
   cardFooter.style.color = color;
 
-};
+}
+
+document.querySelector("#card").addEventListener("click", drawCard);
