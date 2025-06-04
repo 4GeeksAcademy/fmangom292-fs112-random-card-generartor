@@ -32,6 +32,6 @@ body{
 .card-footer{
     border: none;
     background-color: white;
-    text-align: end;
     font-size: 4rem;
+    rotate: 180deg;
 }
